@@ -78,6 +78,41 @@ nav a:hover {
     color: #FFD700;
 }
 
+/* Mobile Menu Toggle Button */
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.mobile-menu-toggle:hover {
+    background: rgba(255, 215, 0, 0.2);
+    border-color: #FFD700;
+    color: #FFD700;
+}
+
+/* Mobile Menu Overlay */
+.mobile-menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+}
+
+.mobile-menu-overlay.active {
+    display: block;
+}
+
 /* Main Content */
 main {
     background-color: white;
@@ -400,14 +435,41 @@ footer a:hover {
         text-align: center;
     }
     
+    /* Mobile Navigation */
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
+    nav {
+        position: relative;
+    }
+    
     nav ul {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 70%;
+        max-width: 300px;
+        background: #003d82;
         flex-direction: column;
-        width: 100%;
+        padding: 80px 20px 20px;
+        box-shadow: -4px 0 20px rgba(0,0,0,0.3);
+        gap: 5px;
+        overflow-y: auto;
+        z-index: 999;
+    }
+    
+    nav ul.mobile-active {
+        display: flex;
     }
     
     nav a {
         display: block;
-        text-align: center;
+        text-align: left;
+        padding: 15px;
+        font-size: 1.1em;
     }
     
     .logo-section {
