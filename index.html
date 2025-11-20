@@ -187,15 +187,29 @@
             <p>Supporting rugby officiating excellence in Otago, New Zealand</p>
         </div>
     </footer>
+<div class="mobile-backdrop" id="mobileBackdrop"></div>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     var menuToggle = document.getElementById('menuToggle');
     var nav = document.getElementById('mainNav');
+    var backdrop = document.getElementById('mobileBackdrop');
     
-    if (menuToggle && nav) {
-        menuToggle.addEventListener('click', function() {
+    if (menuToggle && nav && backdrop) {
+        // Toggle menu
+        menuToggle.addEventListener('click', function(e) {
+            e.stopPropagation();
             nav.classList.toggle('active');
             menuToggle.classList.toggle('active');
+            backdrop.classList.toggle('active');
+            document.body.style.overflow = nav.classList.contains('active') ? 'hidden' : '';
+        });
+        
+        // Close when clicking backdrop
+        backdrop.addEventListener('click', function() {
+            nav.classList.remove('active');
+            menuToggle.classList.remove('active');
+            backdrop.classList.remove('active');
+            document.body.style.overflow = '';
         });
         
         // Close menu when clicking a link
@@ -204,15 +218,9 @@ document.addEventListener('DOMContentLoaded', function() {
             link.addEventListener('click', function() {
                 nav.classList.remove('active');
                 menuToggle.classList.remove('active');
+                backdrop.classList.remove('active');
+                document.body.style.overflow = '';
             });
-        });
-        
-        // Close menu when clicking outside
-        document.addEventListener('click', function(event) {
-            if (!nav.contains(event.target) && !menuToggle.contains(event.target)) {
-                nav.classList.remove('active');
-                menuToggle.classList.remove('active');
-            }
         });
     }
 });
