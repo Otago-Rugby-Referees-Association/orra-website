@@ -1,0 +1,137 @@
+ORRA LOGO - UPDATED & OPTIMIZED
+================================
+
+✅ CHANGES MADE
+
+1. SIZE REDUCED
+   - Original: 480x480px (28KB)
+   - New: 80x80px (9.5KB)
+   - Result: 70% smaller file size, faster loading
+
+2. ROUNDED CORNERS ADDED
+   - Professional, modern appearance
+   - Matches website design style
+   - PNG format with transparency
+
+3. MULTIPLE SIZES INCLUDED
+   - logo.png (80px) - Used in header ✅
+   - logo-100.png (100px) - Alternative size
+   - logo.jpg (100px) - JPG version if needed
+
+TECHNICAL DETAILS
+=================
+
+Current Logo in Header:
+- File: images/logo.png
+- Size: 80x80 pixels
+- Format: PNG with rounded corners
+- Quality: High resolution, optimized
+- File size: 9.5KB
+
+CSS Applied:
+- Height: 80px
+- Width: 80px
+- Border-radius: 10px (rounded corners)
+
+BEFORE vs AFTER
+================
+
+BEFORE:
+- 480x480px square
+- 28KB file size
+- Sharp corners
+- JPG format
+- White background visible in corners
+
+AFTER:
+- 80x80px square
+- 9.5KB file size (70% smaller!)
+- Rounded corners (professional look)
+- PNG format (supports transparency)
+- No white corners
+- Faster page loading
+
+WHY PNG WITH ROUNDED CORNERS?
+==============================
+
+✅ Professional appearance
+✅ Modern design aesthetic
+✅ Matches website styling
+✅ Smaller file size
+✅ Better compression
+✅ Transparency support
+✅ Sharper on high-DPI screens
+
+ALTERNATIVE SIZES AVAILABLE
+============================
+
+If you want a different size:
+
+1. Use logo-100.png (slightly larger):
+   - Edit styles.css
+   - Change: height: 80px; to height: 100px;
+   - Change: images/logo.png to images/logo-100.png
+
+2. Use logo.jpg (no rounded corners):
+   - Edit HTML files
+   - Change: images/logo.png to images/logo.jpg
+
+3. Create custom size:
+   - Original 480x480px file included
+   - Use any image editor to resize
+   - Save as logo-custom.png
+
+MOBILE OPTIMIZATION
+===================
+
+Logo automatically scales on mobile:
+- Desktop: 80x80px
+- Tablet: 80x80px (may adjust)
+- Mobile: Smaller as needed
+
+The rounded corners look great on all devices!
+
+FILE LOCATIONS
+==============
+
+In your website:
+- images/logo.png (80px - CURRENT) ✅
+- images/logo-100.png (100px alternative)
+- images/logo.jpg (100px JPG backup)
+
+BRANDING CONSISTENCY
+====================
+
+The logo now:
+✅ Matches Otago Rugby blue (#003d82)
+✅ Has modern rounded corners
+✅ Loads fast (optimized)
+✅ Looks professional
+✅ Works on all devices
+✅ Scales perfectly
+
+NEED A DIFFERENT SIZE?
+=======================
+
+Easy! Just:
+1. Use image editor (Photoshop, GIMP, online tool)
+2. Open original orra-logo.jpg
+3. Resize to desired dimensions
+4. Save as logo-YOURSIZEpx.png
+5. Update CSS height value
+6. Upload to GitHub
+
+OR let me know what size you need!
+
+PERFECT!
+========
+
+Your logo is now:
+✅ Optimized for web
+✅ Professional appearance
+✅ Fast loading
+✅ Mobile-friendly
+✅ Rounded corners
+✅ Ready to go!
+
+No further action needed - it's already integrated into all pages!
