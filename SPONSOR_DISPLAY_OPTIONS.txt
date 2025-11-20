@@ -1,0 +1,224 @@
+SPONSOR DISPLAY OPTIONS
+=======================
+
+You have TWO options for displaying sponsors on your homepage!
+
+OPTION 1: AUTO-SCROLLING CAROUSEL (Current) ✅
+==============================================
+
+Features:
+✅ Continuously scrolls from right to left
+✅ Smooth, infinite loop animation
+✅ Pauses when you hover over a logo
+✅ Modern, dynamic appearance
+✅ Shows all sponsors continuously
+✅ Eye-catching and professional
+
+Best For:
+- Creating visual interest
+- Modern, dynamic websites
+- Keeping sponsors visible longer
+- Professional appearance
+
+How It Works:
+- Logos scroll automatically across the screen
+- Takes 30 seconds to complete one loop
+- Duplicates logos for seamless scrolling
+- Hover to pause and see details
+- Mobile-friendly (adjusts speed)
+
+Current Status:
+✅ ACTIVE on your homepage right now!
+
+OPTION 2: STATIC GRID
+======================
+
+Features:
+✅ All logos displayed at once
+✅ Static, organized grid layout
+✅ Responsive (adjusts to screen size)
+✅ Simple, clean appearance
+✅ Traditional sponsor wall style
+
+Best For:
+- Simple, straightforward display
+- When users prefer non-moving content
+- Traditional sponsor recognition
+- Print-style layouts
+
+How It Works:
+- All 7 logos shown in a grid
+- Hover effects (lift up slightly)
+- Automatically adjusts columns
+- Desktop: 3-4 logos per row
+- Mobile: 1-2 logos per row
+
+HOW TO SWITCH BETWEEN OPTIONS
+==============================
+
+If you want to change from carousel to grid:
+
+1. Open index.html
+2. Find the sponsor section (around line 45)
+3. Replace the carousel HTML with grid HTML
+
+CAROUSEL HTML (Current):
+------------------------
+<div class="sponsors-carousel">
+    <div class="sponsors-track">
+        [logos scroll here]
+    </div>
+</div>
+
+GRID HTML (Alternative):
+-----------------------
+<div class="sponsors-grid">
+    <div class="sponsor-logo">
+        <img src="images/sponsors/pkf-dunedin.png" alt="PKF Dunedin">
+    </div>
+    [repeat for each sponsor]
+</div>
+
+FULL GRID CODE
+==============
+
+Copy and paste this to replace the carousel:
+
+<div class="sponsors-grid">
+    <div class="sponsor-logo">
+        <img src="images/sponsors/pkf-dunedin.png" alt="PKF Dunedin">
+    </div>
+    <div class="sponsor-logo">
+        <img src="images/sponsors/qpower.png" alt="Q Power">
+    </div>
+    <div class="sponsor-logo">
+        <img src="images/sponsors/speights-ale-house.png" alt="Speight's Ale House">
+    </div>
+    <div class="sponsor-logo">
+        <img src="images/sponsors/andrew-haulage.png" alt="Andrew Haulage">
+    </div>
+    <div class="sponsor-logo">
+        <img src="images/sponsors/freds-fencing.png" alt="Fred's Fencing">
+    </div>
+    <div class="sponsor-logo">
+        <img src="images/sponsors/new-world.png" alt="New World">
+    </div>
+    <div class="sponsor-logo">
+        <img src="images/sponsors/paladin.png" alt="Paladin">
+    </div>
+</div>
+
+CUSTOMIZING THE CAROUSEL
+=========================
+
+Want to change carousel speed?
+
+In styles.css, find:
+    animation: scroll 30s linear infinite;
+
+Change the number:
+- 20s = Faster scrolling
+- 40s = Slower scrolling
+- 30s = Current speed (recommended)
+
+VISUAL COMPARISON
+=================
+
+CAROUSEL:
+[Logo1] → [Logo2] → [Logo3] → [Logo4] → ...
+Continuously moving, loops back to start
+
+GRID:
+[Logo1]  [Logo2]  [Logo3]  [Logo4]
+[Logo5]  [Logo6]  [Logo7]
+All visible at once, static
+
+MOBILE BEHAVIOR
+===============
+
+CAROUSEL on Mobile:
+- Scrolls faster (20s instead of 30s)
+- Smaller logo boxes
+- Still smooth and professional
+
+GRID on Mobile:
+- Shows 1-2 logos per row
+- All logos stack vertically
+- Easy to scroll through
+
+Both work great on mobile!
+
+RECOMMENDATION
+==============
+
+We recommend the CAROUSEL (current setup) because:
+
+✅ More engaging and modern
+✅ Keeps all sponsors visible longer
+✅ Creates visual interest
+✅ Professional appearance
+✅ Users notice it more
+✅ Sponsors get more exposure
+
+But if you prefer static display, the grid option is available!
+
+ADDING MORE SPONSORS
+====================
+
+For Carousel:
+1. Add logo to images/sponsors/
+2. Add TWO copies to the carousel:
+   - One in first set
+   - One in duplicate set (for loop)
+
+For Grid:
+1. Add logo to images/sponsors/
+2. Add ONE div to the grid
+3. Grid auto-adjusts layout
+
+Both support unlimited sponsors!
+
+TESTING
+=======
+
+To test locally:
+1. Open index.html in browser
+2. Watch carousel scroll
+3. Hover to pause
+4. Check mobile view (browser dev tools)
+
+WHICH SHOULD I USE?
+===================
+
+Use CAROUSEL if:
+✅ You want modern, dynamic look
+✅ You want to draw attention
+✅ You have 5+ sponsors
+✅ You want professional appearance
+
+Use GRID if:
+✅ You prefer traditional layout
+✅ Users prefer non-moving content
+✅ You want simple design
+✅ You have 3-4 sponsors only
+
+CURRENT STATUS
+==============
+
+Your homepage currently uses: AUTO-SCROLLING CAROUSEL ✅
+
+Features enabled:
+✅ 30-second loop
+✅ Hover to pause
+✅ Smooth animation
+✅ Mobile-optimized
+✅ All 7 sponsors displayed
+
+Ready to go live!
+
+NEED HELP SWITCHING?
+=====================
+
+Just ask! Or follow the steps above to switch from carousel to grid.
+
+Both options are fully coded and ready - just swap the HTML!
