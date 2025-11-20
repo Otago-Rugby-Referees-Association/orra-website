@@ -438,6 +438,15 @@ footer a:hover {
     /* Mobile Navigation */
     .mobile-menu-toggle {
         display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    
+    .header-content {
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
     }
     
     nav {
@@ -473,15 +482,16 @@ footer a:hover {
     }
     
     .logo-section {
-        flex-direction: column;
+        flex-direction: row;
+        gap: 10px;
     }
     
     .logo-section img {
-        height: 100px;
+        height: 60px;
     }
     
     .logo-text h1 {
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
     
     .hero h2 {
