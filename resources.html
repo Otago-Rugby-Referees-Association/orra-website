@@ -17,7 +17,12 @@
                         <p class="tagline">Supporting Excellence in Rugby Officiating</p>
                     </div>
                 </div>
-                                <nav>
+                <button class="mobile-menu-toggle" id="menuToggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav id="mainNav">
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
@@ -29,8 +34,7 @@
                         <li><a href="honesty-box.html">Honesty Box</a></li>
                         <li><a href="contacts.html">Contact</a></li>
                     </ul>
-                                </nav>
-                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle menu">☰</button>
+                </nav>
             </div>
         </div>
     </header>
@@ -83,5 +87,35 @@
             <p>&copy; 2024 Otago Rugby Referees Association Incorporated. All rights reserved.</p>
         </div>
     </footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var menuToggle = document.getElementById('menuToggle');
+    var nav = document.getElementById('mainNav');
+    
+    if (menuToggle && nav) {
+        menuToggle.addEventListener('click', function() {
+            nav.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+        
+        // Close menu when clicking a link
+        var links = nav.querySelectorAll('a');
+        links.forEach(function(link) {
+            link.addEventListener('click', function() {
+                nav.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!nav.contains(event.target) && !menuToggle.contains(event.target)) {
+                nav.classList.remove('active');
+                menuToggle.classList.remove('active');
+            }
+        });
+    }
+});
+</script>
 </body>
 </html>

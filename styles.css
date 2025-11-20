@@ -78,39 +78,38 @@ nav a:hover {
     color: #FFD700;
 }
 
-/* Mobile Menu Toggle Button */
+/* Mobile Menu Toggle Button - Hamburger Icon */
 .mobile-menu-toggle {
     display: none;
-    background: none;
-    border: 2px solid white;
-    color: white;
-    font-size: 24px;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
     cursor: pointer;
-    padding: 8px 12px;
-    border-radius: 4px;
+    padding: 0;
+    z-index: 1001;
+}
+
+.mobile-menu-toggle span {
+    width: 30px;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
     transition: all 0.3s;
 }
 
-.mobile-menu-toggle:hover {
-    background: rgba(255, 215, 0, 0.2);
-    border-color: #FFD700;
-    color: #FFD700;
+.mobile-menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
 }
 
-/* Mobile Menu Overlay */
-.mobile-menu-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 998;
+.mobile-menu-toggle.active span:nth-child(2) {
+    opacity: 0;
 }
 
-.mobile-menu-overlay.active {
-    display: block;
+.mobile-menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
 }
 
 /* Main Content */
@@ -437,61 +436,65 @@ footer a:hover {
     
     /* Mobile Navigation */
     .mobile-menu-toggle {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }
-    
-    .header-content {
-        flex-direction: row;
-        justify-content: space-between;
-        position: relative;
+        display: flex;
     }
     
     nav {
-        position: relative;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        max-width: 320px;
+        height: 100vh;
+        background: #003d82;
+        transition: left 0.3s ease;
+        z-index: 1000;
+        overflow-y: auto;
+    }
+    
+    nav.active {
+        left: 0;
+        box-shadow: 2px 0 10px rgba(0,0,0,0.5);
     }
     
     nav ul {
-        display: none;
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        width: 70%;
-        max-width: 300px;
-        background: #003d82;
         flex-direction: column;
-        padding: 80px 20px 20px;
-        box-shadow: -4px 0 20px rgba(0,0,0,0.3);
-        gap: 5px;
-        overflow-y: auto;
-        z-index: 999;
+        padding: 80px 0 20px;
+        gap: 0;
     }
     
-    nav ul.mobile-active {
-        display: flex;
+    nav ul li {
+        width: 100%;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
     }
     
     nav a {
         display: block;
-        text-align: left;
-        padding: 15px;
+        padding: 18px 25px;
         font-size: 1.1em;
+        text-align: left;
+    }
+    
+    .header-content {
+        position: relative;
     }
     
     .logo-section {
         flex-direction: row;
         gap: 10px;
+        flex: 1;
     }
     
     .logo-section img {
-        height: 60px;
+        height: 50px;
     }
     
     .logo-text h1 {
-        font-size: 1.2em;
+        font-size: 1em;
+    }
+    
+    .logo-text .tagline {
+        font-size: 0.7em;
     }
     
     .hero h2 {
