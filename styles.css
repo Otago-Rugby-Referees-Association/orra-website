@@ -88,9 +88,11 @@ nav a:hover {
     background: transparent;
     border: none;
     cursor: pointer;
-    padding: 0;
+    padding: 10px;
     z-index: 1001;
     position: relative;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
 }
 
 .mobile-menu-toggle span {
@@ -99,6 +101,7 @@ nav a:hover {
     background: white;
     border-radius: 3px;
     transition: all 0.3s;
+    pointer-events: none;
 }
 
 .mobile-menu-toggle.active span:nth-child(1) {
