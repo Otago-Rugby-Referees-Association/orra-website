@@ -1,0 +1,255 @@
+ORRA WEBSITE v2 - WHAT'S NEW
+=============================
+
+🎉 MAJOR UPDATES 🎉
+
+1. PHOTO GALLERIES EVERYWHERE
+   - Dedicated gallery page with 30+ photo placeholders
+   - Photo sections on homepage
+   - Panel member photo displays
+   - Event and training photo areas
+   - Easy-to-replace placeholders
+   - Professional hover effects and captions
+
+2. PROMINENT SPONSOR RECOGNITION
+   - Featured sponsor section on homepage
+   - Professional grid layout
+   - Hover effects for sponsors
+   - Easy logo replacement system
+   - Placeholders for 4+ sponsors
+   - Mobile-responsive display
+
+3. HONOURS & SERVICE HISTORY
+   - Complete page with your Excel data
+   - Life Members (12 current members)
+   - Years of Service tables:
+     * Metro: Bryce Adie & Ivan Richards (33 years!)
+     * Central: David Burton & Roger Hill (31 years!)
+     * South: Wayne Carruthers & Neville Muir (22 years!)
+   - Test Referees showcase
+   - Award winners 2020-2024
+   - Executive history
+
+4. NEW PAGES
+   - honours.html - Service recognition
+   - gallery.html - Photo galleries
+   - Updated panels.html - With photo sections
+
+5. ENHANCED DESIGN
+   - New photo gallery CSS
+   - Sponsor display styling
+   - Service badges and honour cards
+   - Better visual hierarchy
+   - More professional appearance
+
+WHAT YOU NEED TO DO
+===================
+
+ESSENTIAL (Before Launch):
+ - Add sponsor logos to images/sponsors/
+ - Replace sponsor placeholders on homepage
+ - Add executive names/contacts
+ - Add referee names to panels
+
+RECOMMENDED (First Week):
+ - Add referee photos (10-20 to start)
+ - Add event photos from recent season
+ - Set up Google Forms
+ - Create Google Drive folders
+
+OPTIONAL (Ongoing):
+ - Keep adding photos regularly
+ - Update honours as awards are given
+ - Add news/updates
+ - Expand gallery with historical photos
+
+FILE STRUCTURE
+==============
+
+orra-final/
+├── images/
+│   ├── logo.jpg ✅ (already included)
+│   ├── referees/ (ADD YOUR PHOTOS HERE)
+│   ├── sponsors/ (ADD SPONSOR LOGOS HERE)
+│   └── events/ (ADD EVENT PHOTOS HERE)
+├── index.html (homepage with sponsors)
+├── honours.html (NEW - service history)
+├── gallery.html (NEW - photo gallery)
+├── panels.html (updated with photos)
+├── standards.html (Bronco & Law standards)
+├── contacts.html (executive)
+├── honesty-box.html (anonymous feedback)
+├── about.html
+├── fuel-reimbursements.html
+├── key-dates.html
+├── draw.html
+├── training.html
+├── policies.html
+├── resources.html
+└── styles.css (updated styles)
+
+DOCUMENTATION INCLUDED
+======================
+
+README.md - Complete setup guide
+PHOTO_GUIDE.md - Detailed photo instructions
+GOOGLE_INTEGRATION.md - Google tools setup
+WHATS_NEW.txt - This file!
+
+PHOTO PLACEHOLDERS
+==================
+
+Homepage: 4 photo placeholders
+Gallery Page: 30+ photo placeholders organized by:
+  - Match Day Action (8 spots)
+  - Training & Development (6 spots)
+  - Social Events (6 spots)
+  - Awards & Recognition (4 spots)
+  - Team Photos (2 spots)
+Panels Page: 2+ photos per panel
+
+SPONSOR PLACEHOLDERS
+====================
+
+Homepage: 4 prominent sponsor slots
+- Highly visible between hero and main content
+- Professional grid layout
+- Easy to expand for more sponsors
+
+DATA ALREADY INTEGRATED
+========================
+
+From your Excel file:
+✅ 12 Life Members
+✅ Top 15 Metro service years
+✅ Top 10 Central service years
+✅ Top 9 South service years
+✅ Test Referees (Doleman, McLachlan, Bishop, Millar)
+✅ Award Winners 2020-2024
+✅ Recent Executive History
+
+QUICK START
+===========
+
+1. UPLOAD TO GITHUB
+   - All files including images folder
+   - Enable GitHub Pages
+   - Configure DNS
+
+2. ADD SPONSORS (10 minutes)
+   - Save logos to images/sponsors/
+   - Edit index.html sponsor section
+   - Replace 4 placeholders with actual logos
+
+3. ADD SOME PHOTOS (30 minutes)
+   - Start with 10-20 best photos
+   - Save to images/referees/ or images/events/
+   - Replace placeholders in gallery.html
+   - Add 4 featured photos to homepage
+
+4. UPDATE CONTENT (15 minutes)
+   - Add executive names to contacts.html
+   - Add referee names to panels.html
+   - Replace any "[To be updated]" text
+
+5. GO LIVE!
+   - Test everything
+   - Announce to members
+   - Reapply for Google Workspace ✅
+
+BENEFITS
+========
+
+✅ Professional appearance with photos
+✅ Sponsor recognition (attract more sponsors!)
+✅ Honours history preserves legacy
+✅ Photo galleries engage members
+✅ Modern, visually appealing design
+✅ Mobile-friendly photo displays
+✅ Easy to maintain and update
+✅ Still costs $0/month to host!
+
+TECHNICAL IMPROVEMENTS
+=======================
+
+✅ Responsive photo grids
+✅ Optimized CSS for galleries
+✅ Hover effects on photos
+✅ Image lazy loading support
+✅ Professional sponsor styling
+✅ Service recognition badges
+✅ Mobile-optimized layouts
+✅ Fast loading with compressed images
+
+NEXT STEPS
+==========
+
+Week 1:
+- Add sponsor logos
+- Add initial photos (10-20)
+- Update contact info
+- Test on mobile
+
+Week 2:
+- Add more photos (aim for 50+)
+- Set up Google Forms
+- Create photo albums
+
+Month 1:
+- Keep adding photos from matches
+- Update honours as needed
+- Gather member feedback
+- Continuous improvement
+
+COMPARISON: V1 vs V2
+====================
+
+V1 (Original):
+- Text and basic layout
+- No photos
+- No sponsor recognition
+- No honours/service history
+- 10 pages
+
+V2 (This Version):
+- Photos throughout ✅
+- Prominent sponsors ✅
+- Complete service history ✅
+- Photo galleries ✅
+- 14 pages ✅
+- More visual appeal ✅
+- Better engagement ✅
+
+GETTING HELP
+============
+
+Detailed guides included:
+- README.md - Overall setup
+- PHOTO_GUIDE.md - Photo management
+- GOOGLE_INTEGRATION.md - Google tools
+
+Still stuck?
+- Check the guides
+- Test in different browser
+- Ask via Honesty Box
+- Email webmaster
+
+SUCCESS!
+========
+
+You now have a COMPLETE, professional website with:
+✅ Photo galleries
+✅ Sponsor recognition
+✅ Service history
+✅ Honours board
+✅ Life members
+✅ All the features you requested
+✅ Easy to maintain
+✅ Zero cost hosting
+✅ Ready for Google Workspace approval
+
+Just add your photos and sponsor logos and GO LIVE! 🚀
+
+Questions? See the README.md and PHOTO_GUIDE.md
+
+Good luck with the launch! 🎉

@@ -1,207 +1,304 @@
-# ORRA Website Setup Guide
+# ORRA Website v2 - Complete with Photos & Sponsors!
 
-This guide will help you get the Otago Rugby Referees Association website live on orra.co.nz using GitHub Pages (free hosting).
+## 🎉 What's New in Version 2
 
-## What's Included
+✅ **Photo Galleries Throughout** - Placeholders ready for your referee photos
+✅ **Prominent Sponsor Recognition** - Professional sponsor section on homepage  
+✅ **Honours & Service History** - Complete records from your Excel file
+✅ **Life Members Page** - All current life members displayed
+✅ **Years of Service** - Metro, Central, and South region recognition
+✅ **Executive History** - Past chairs and presidents
+✅ **Photo Upload Instructions** - Easy guides for adding photos
 
-Your website includes the following pages:
-- **Home** - Welcome page with quick links to all sections
-- **Fuel Reimbursements** - Information about travel expense claims
-- **Key Dates** - Important dates and calendar
-- **Key Contacts** - Committee members and contact information
-- **Training and Development** - Resources for referee development
-- **Internal Draw** - Match appointments and schedules
-- **ORRA Policies** - Association policies and procedures
-- **Other Resources** - Useful links and materials
-- **Referee Review Platform** - Performance review information
+## 📁 New Files & Structure
 
-## Setup Steps
-
-### Step 1: Create a GitHub Account (if you don't have one)
-
-1. Go to https://github.com
-2. Click "Sign up"
-3. Follow the registration process
-4. Verify your email address
-
-### Step 2: Create a Repository for Your Website
-
-1. Log in to GitHub
-2. Click the "+" icon in the top right corner
-3. Select "New repository"
-4. Name your repository: `orra-website` (or any name you prefer)
-5. Make it **Public**
-6. Do NOT initialize with README, .gitignore, or license
-7. Click "Create repository"
-
-### Step 3: Upload Your Website Files
-
-**Option A: Using GitHub Web Interface (Easiest)**
-
-1. On your new repository page, click "uploading an existing file"
-2. Drag and drop ALL the files from the orra-website folder:
-   - index.html
-   - styles.css
-   - fuel-reimbursement.html
-   - key-dates.html
-   - contacts.html
-   - training.html
-   - draw.html
-   - policies.html
-   - resources.html
-   - review.html
-3. Add a commit message: "Initial website upload"
-4. Click "Commit changes"
-
-**Option B: Using Git Command Line (If you're comfortable with Git)**
-
-```bash
-cd path/to/orra-website
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/orra-website.git
-git push -u origin main
+```
+orra-final/
+├── images/
+│   ├── logo.jpg (your ORRA logo)
+│   ├── referees/ (add referee photos here)
+│   ├── sponsors/ (add sponsor logos here)
+│   └── events/ (add event photos here)
+├── index.html (with sponsor section & photo previews)
+├── honours.html (NEW - service history & life members)
+├── gallery.html (NEW - extensive photo gallery)
+├── panels.html (updated with photo placeholders)
+├── standards.html (Bronco & Law test standards)
+├── contacts.html (executive contacts)
+├── honesty-box.html (anonymous submissions)
+├── about.html
+├── resources.html
+├── fuel-reimbursements.html
+├── key-dates.html
+├── draw.html
+├── training.html
+├── policies.html
+└── styles.css (updated with photo & sponsor styles)
 ```
 
-### Step 4: Enable GitHub Pages
+## 🖼️ Adding Photos
 
-1. In your repository, click "Settings" (top menu)
-2. Scroll down to "Pages" in the left sidebar
-3. Under "Source", select "Deploy from a branch"
-4. Under "Branch", select "main" and "/ (root)"
-5. Click "Save"
-6. Wait 2-3 minutes for GitHub to build your site
-7. Your site will be live at: `https://YOUR-USERNAME.github.io/orra-website/`
+### Quick Method (Individual Photos)
+1. Save photos to `images/referees/`, `images/events/`, or `images/sponsors/`
+2. Open the HTML file you want to edit
+3. Find a placeholder like:
+   ```html
+   <div class="photo-item photo-placeholder">
+   ```
+4. Replace with:
+   ```html
+   <div class="photo-item">
+       <img src="images/referees/john-smith.jpg" alt="John Smith">
+       <div class="photo-caption">John Smith - Premier Panel</div>
+   </div>
+   ```
 
-### Step 5: Configure Your Custom Domain (orra.co.nz)
+### Recommended Photo Sizes
+- **Portrait photos**: 600x800px
+- **Landscape photos**: 800x600px
+- **Team photos**: 1200x800px
+- **Sponsor logos**: 400x200px (transparent PNG preferred)
 
-#### A. In GitHub:
+### Google Photos Integration (Easier for Bulk Photos!)
+1. Create Google Photos album: "ORRA Gallery"
+2. Add all your photos
+3. Get embed code from album
+4. Add to gallery.html
 
-1. Still in Settings → Pages
-2. Under "Custom domain", enter: `orra.co.nz`
-3. Click "Save"
-4. Check the box "Enforce HTTPS" (may need to wait a few minutes for this option)
+See **PHOTO_GUIDE.md** for detailed instructions.
 
-#### B. In Your Domain Registrar:
+## 🏢 Adding Sponsor Logos
 
-You need to add DNS records for orra.co.nz. Log in to wherever you manage your .nz domain and add these DNS records:
+### On Homepage (Most Visible)
+1. Save sponsor logo to `images/sponsors/sponsor-name.png`
+2. Open `index.html`
+3. Find the sponsors section (around line 50)
+4. Replace placeholder with:
+   ```html
+   <div class="sponsor-logo">
+       <img src="images/sponsors/sponsor-name.png" alt="Sponsor Name">
+   </div>
+   ```
 
-**For apex domain (orra.co.nz):**
+### Logo Requirements
+- **Format**: PNG (transparent background) or JPG
+- **Size**: 400x200px recommended
+- **Quality**: High resolution for print-ready look
+- **Naming**: lowercase, no spaces (e.g., `smith-electrical.png`)
 
-Add these A records:
+### Multiple Sponsor Tiers
+The grid automatically adjusts. Add as many sponsors as you have - they'll display in a responsive grid.
+
+## 📊 Honours & Service Data
+
+Your service history is already integrated! The honours.html page includes:
+
+✅ **Life Members** (12 current members)
+✅ **Years of Service**:
+   - Metro: Top 15 referees (Bryce Adie & Ivan Richards - 33 years!)
+   - Central: Top 10 referees (David Burton & Roger Hill - 31 years!)
+   - South: Top 9 referees (Wayne Carruthers & Neville Muir - 22 years!)
+✅ **Test Referees**: James Doleman, Lindsay McLachlan, Dave Bishop, Don Millar
+✅ **Recent Award Winners**: 2020-2024
+✅ **Executive History**: Recent chairs and presidents
+
+### To Update Honours Data
+1. Update your Excel file
+2. Send to webmaster or
+3. Edit `honours.html` directly with new data
+
+## 🚀 Setup Instructions
+
+### Same as Before!
+1. Upload ALL files to GitHub (including `images` folder)
+2. Enable GitHub Pages
+3. Configure DNS for orra.co.nz
+4. Site goes live!
+
+**NEW: Make sure to upload the `images` folder structure!**
+
+## 📸 Photo Organization Tips
+
+### Folder Structure
 ```
-Type: A
-Name: @ (or leave blank for root domain)
-Value: 185.199.108.153
-
-Type: A
-Name: @ (or leave blank for root domain)
-Value: 185.199.109.153
-
-Type: A
-Name: @ (or leave blank for root domain)
-Value: 185.199.110.153
-
-Type: A
-Name: @ (or leave blank for root domain)
-Value: 185.199.111.153
+images/
+├── referees/
+│   ├── premier-panel/
+│   ├── development-panel/
+│   ├── action-shots/
+│   └── portraits/
+├── events/
+│   ├── 2024-preseason/
+│   ├── social-events/
+│   └── awards-night/
+└── sponsors/
+    └── [sponsor logos]
 ```
 
-**For www subdomain:**
+### Naming Convention
+- **Referees**: `firstname-lastname-action.jpg`
+- **Events**: `2024-03-15-preseason-training.jpg`
+- **Sponsors**: `company-name-logo.png`
 
-Add this CNAME record:
+## 🎨 Customizing Photo Displays
+
+### Change Photo Grid Columns
+In `styles.css`, find `.photo-gallery` and adjust:
+```css
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 ```
-Type: CNAME
-Name: www
-Value: YOUR-USERNAME.github.io
-```
+Change `200px` to:
+- `150px` for more columns (smaller photos)
+- `250px` for fewer columns (larger photos)
 
-**Important:** DNS changes can take 24-48 hours to fully propagate, but often work within an hour.
+### Photo Hover Effects
+Already included! Photos lift up and cast shadow on hover.
 
-### Step 6: Verify It's Working
-
-1. Wait at least 30 minutes after adding DNS records
-2. Visit http://orra.co.nz in your browser
-3. You should see your new website!
-4. Once HTTPS is enforced, https://orra.co.nz should also work
-
-## Updating Your Website Content
-
-To update contact details, dates, or any other content:
-
-1. Go to your GitHub repository
-2. Click on the file you want to edit
-3. Click the pencil icon (Edit this file)
-4. Make your changes
-5. Scroll down and click "Commit changes"
-6. Your website will automatically update within a few minutes
-
-## Customization Tips
-
-### Update Contact Information
-
-Edit `contacts.html` to add:
-- Names of committee members
-- Email addresses (use your new Google Workspace emails once approved!)
-- Phone numbers
-- Physical address
-
-### Add Your Logo
-
-If you have an ORRA logo:
-1. Upload the logo image to your repository
-2. Edit the header section in each HTML file to add:
+### Add Captions
 ```html
-<img src="your-logo.png" alt="ORRA Logo" style="height: 60px;">
+<div class="photo-caption">
+    Your caption here - visible on hover
+</div>
 ```
 
-### Update Colors
+## 🏆 Showcase Your Sponsors
 
-The website uses these main colors (in styles.css):
-- Primary: `#003d7a` (dark blue)
-- Secondary: `#0059b3` (medium blue)
-- Accent: `#00a86b` (green)
+### Homepage Sponsor Section
+- **Prominent placement** between hero and quick links
+- **Professional layout** with hover effects
+- **Responsive grid** - looks great on all devices
+- **Call-to-action** for new sponsor inquiries
 
-You can change these in the `:root` section of `styles.css` to match your branding.
+### Add Sponsor Links
+```html
+<div class="sponsor-logo">
+    <a href="https://sponsor-website.com" target="_blank">
+        <img src="images/sponsors/logo.png" alt="Sponsor">
+    </a>
+</div>
+```
 
-## Troubleshooting
+## 📱 Mobile Optimization
 
-**Website not showing up:**
-- Check that GitHub Pages is enabled (Settings → Pages)
-- Verify your files are in the root directory (not in a subfolder)
-- Make sure `index.html` exists
+All photo galleries and sponsor sections are **fully responsive**:
+- Desktop: 4-5 photos per row
+- Tablet: 2-3 photos per row  
+- Mobile: 1-2 photos per row
 
-**Domain not working:**
-- DNS changes can take up to 48 hours
-- Verify DNS records are correct
-- Check your domain registrar's DNS settings
-- Use https://dnschecker.org to verify DNS propagation
+Photos automatically resize and reflow!
 
-**HTTPS not working:**
-- Wait 24 hours after adding custom domain
-- Ensure DNS is properly configured
-- Try unchecking and rechecking "Enforce HTTPS" in GitHub Pages settings
+## ✅ Pre-Launch Checklist
 
-## Google Workspace Application
+### Photos
+- [ ] Collect referee photos
+- [ ] Collect event photos
+- [ ] Organize into folders
+- [ ] Name files consistently
+- [ ] Upload to `images/` folders
 
-Once your website is live at orra.co.nz:
+### Sponsors
+- [ ] Get high-res sponsor logos
+- [ ] Convert to PNG if needed
+- [ ] Add to `images/sponsors/`
+- [ ] Update homepage sponsor section
+- [ ] Test sponsor links (if applicable)
 
-1. Take screenshots of your live website
-2. Reapply for Google for Nonprofits Workspace
-3. In the application, provide the URL: https://orra.co.nz
-4. Explain that the website shows your organization is active and legitimate
+### Content
+- [ ] Add referee names to panels
+- [ ] Update executive contacts
+- [ ] Verify honours data is current
+- [ ] Replace "[To be updated]" placeholders
+- [ ] Add photo captions
 
-Google should approve your application now that you have a functioning website on your domain!
+### Technical
+- [ ] Upload entire site to GitHub
+- [ ] Enable GitHub Pages
+- [ ] Configure DNS
+- [ ] Test all photo galleries
+- [ ] Test on mobile device
+- [ ] Verify sponsor logos display correctly
 
-## Support
+## 💡 Pro Tips
 
-If you need help:
-- GitHub Pages documentation: https://docs.github.com/en/pages
-- GitHub Community Forum: https://github.community/
-- This README file!
+### Bulk Photo Upload
+1. Use GitHub web interface: "Upload files"
+2. Drag entire `images` folder
+3. Commit with message: "Add referee and event photos"
+4. All photos upload at once!
 
-## License
+### Photo Quality
+- Use **high resolution** photos (min 1200px wide)
+- Photos will be automatically resized by browser
+- **Compress** large files before upload (use tinypng.com)
+- Aim for under 500KB per photo
 
-This website is created for the Otago Rugby Referees Association Incorporated. All content is copyright ORRA unless otherwise stated.
+### Sponsor Logo Tips
+- **Square or horizontal** logos work best
+- Remove backgrounds (use PNG transparency)
+- Ensure logos are **legible** at small sizes
+- Test on mobile - logos should still be clear
+
+## 📞 Need Help?
+
+### Adding Photos
+See **PHOTO_GUIDE.md** (included)
+
+### Google Photos Integration
+See **GOOGLE_INTEGRATION.md**
+
+### General Setup
+See original **README.md**
+
+## 🎉 You're Ready!
+
+Your website now has:
+✅ Professional photo galleries
+✅ Prominent sponsor recognition
+✅ Complete service history
+✅ Honours and awards
+✅ Life member recognition
+✅ Executive history
+✅ Beautiful, responsive design
+✅ Easy photo management
+✅ Zero monthly cost!
+
+**Just add your photos and sponsor logos, and you're live!**
+
+---
+
+## 📸 Quick Photo Guide
+
+### Example: Adding a Referee Photo
+
+**Current (placeholder):**
+```html
+<div class="photo-item photo-placeholder">
+    <div>Add photo</div>
+</div>
+```
+
+**Updated (with photo):**
+```html
+<div class="photo-item">
+    <img src="images/referees/john-doe.jpg" alt="John Doe">
+    <div class="photo-caption">John Doe - Premier Panel Referee</div>
+</div>
+```
+
+### Example: Adding Sponsor Logo
+
+**Current (placeholder):**
+```html
+<div class="sponsor-logo sponsor-placeholder">
+    <div>Sponsor Logo</div>
+</div>
+```
+
+**Updated (with logo):**
+```html
+<div class="sponsor-logo">
+    <img src="images/sponsors/acme-sports.png" alt="ACME Sports">
+</div>
+```
+
+That's it! 🎉
