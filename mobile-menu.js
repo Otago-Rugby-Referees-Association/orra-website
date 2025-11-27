@@ -16,6 +16,7 @@
             menuToggle.classList.remove('active');
             backdrop.classList.remove('active');
             document.body.style.overflow = '';
+            document.body.classList.remove('menu-open');
         }
         
         function openMenu() {
@@ -23,6 +24,7 @@
             menuToggle.classList.add('active');
             backdrop.classList.add('active');
             document.body.style.overflow = 'hidden';
+            document.body.classList.add('menu-open');
         }
         
         function toggleMenu(e) {
@@ -57,6 +59,13 @@
         for (var i = 0; i < links.length; i++) {
             links[i].addEventListener('click', closeMenu, false);
         }
+        
+        // Close menu on window resize if opened
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                closeMenu();
+            }
+        });
         
         console.log('Mobile menu initialized');
     }
