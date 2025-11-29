@@ -173,10 +173,15 @@ h3 {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #003d82 0%, #0051a5 100%);
+    background: linear-gradient(135deg, rgba(0, 61, 130, 0.85) 0%, rgba(0, 81, 165, 0.85) 100%), 
+                url('images/PremFinal25.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
     text-align: center;
     padding: 60px 0;
+    position: relative;
 }
 
 .hero h2 {
