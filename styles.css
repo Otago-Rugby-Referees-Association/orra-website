@@ -501,7 +501,7 @@ footer a:hover {
         right: 0;
         bottom: 0;
         max-height: calc(100vh - 80px);
-        background: #003d82;
+        background: #024a96;
         z-index: 1000;
         overflow-y: auto;
         overflow-x: hidden;
