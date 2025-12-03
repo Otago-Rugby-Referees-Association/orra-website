@@ -25,7 +25,7 @@ body.menu-open {
 
 /* Header Styles */
 header {
-    background: linear-gradient(135deg, #003d82 0%, #0051a5 100%);
+    background: linear-gradient(135deg, #024a96 0%, #0051a5 100%);
     color: white;
     padding: 12px 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
